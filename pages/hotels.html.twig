@@ -1,0 +1,440 @@
+{% extends 'master/master.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid container-page-content mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-12 page-sidebar">
+                <div class="title-area">Hotéis</div>
+
+                <div class="list-options">
+                    <div class="option active">
+                        Populares
+                        <i class="icn arrow-right"></i>
+                    </div>
+
+                    <div class="option white">Por versão</div>
+
+                    <div class="option">Retrôs</div>
+
+                    <div class="option">
+                        RPG
+                        <div class="ntf">5</div>
+                    </div>
+
+                    <div class="option">Custom</div>
+                </div>
+
+                <a href="{{ path_for('mainPage') }}">
+                    <div class="back-main-page">
+                        <i class="icn arrow-left-circle x3"></i>
+                        <div class="text">
+                            Menu principal
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-9 offset-lg-3 mt-lg-0 col-12 mt-3 page-main-content">
+                <div class="row no-gutters">
+                    <div class="col-lg-10 col-6">
+                        <div class="subtitle-area">Populares</div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 text-right">
+                        <div class="dropdown">
+                            <button class="button button-one button-dropdown cursorPointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icn circle mr-1"></i>
+                                Filtrar por usuários
+                                <span class="icn arrow-down ml-1"></span>
+                            </button>
+
+                            <div class="dropdown-menu custom-dropdown">
+                                <a class="dropdown-item" href="#">Oi?</a>
+                                <a class="dropdown-item" href="#">Oi?</a>
+                                <a class="dropdown-item" href="#">Oi?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row page-content-scroll mt-4">
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12 mt-5">
+                        <div class="box-hotel-partner">
+                            <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');">
+                                <div class="infos-blur" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                <div class="infos">
+                                    <div class="row no-gutters h-100 align-items-center">
+                                        <div class="col-9 offset-1">
+                                            <div class="users">
+                                                <i class="icn user x2"></i>
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <div class="col-1">
+                                            <div class="icn like-filled x2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="title mt-2">Habblive</div>
+                            <div class="description">Versão R163</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'helpers/player-bottom.html.twig' %}
+{% endblock %}

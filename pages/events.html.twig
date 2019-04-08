@@ -1,0 +1,205 @@
+{% extends 'master/master.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid container-page-content mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-12 page-sidebar">
+                <div class="title-area">Eventos</div>
+
+                <div class="list-options">
+                    <div class="option active">
+                        Populares
+                        <i class="icn arrow-right"></i>
+                    </div>
+
+                    <div class="option">Por categoria</div>
+                    <div class="option">Presença</div>
+
+                    <div class="option">
+                        Por hotel
+                        <div class="ntf">5</div>
+                    </div>
+
+                    <div class="option">Todos</div>
+                </div>
+
+                <a href="{{ path_for('mainPage') }}">
+                    <div class="back-main-page">
+                        <i class="icn arrow-left-circle x3"></i>
+                        <div class="text">
+                            Menu principal
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-9 offset-lg-3 mt-lg-0 col-12 mt-3 page-main-content">
+                <div class="row no-gutters">
+                    <div class="col-lg-10 col-6">
+                        <div class="subtitle-area">Populares</div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 text-right">
+                        <div class="dropdown">
+                            <button class="button button-one button-dropdown cursorPointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icn circle mr-1"></i>
+                                Filtrar por usuários
+                                <span class="icn arrow-down ml-1"></span>
+                            </button>
+
+                            <div class="dropdown-menu custom-dropdown">
+                                <a class="dropdown-item" href="#">Oi?</a>
+                                <a class="dropdown-item" href="#">Oi?</a>
+                                <a class="dropdown-item" href="#">Oi?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters page-content-scroll mt-4">
+                    <div class="row no-gutters">
+                        <div class="col-12 mt-4">
+                            <div class="box-event active">
+                                <div class="row">
+                                    <div class="col-md-3 col-6">
+                                        <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Agora</div>
+                                        <div class="info-description">Doação de Raros</div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Presença</div>
+                                        <div class="info-description">1296</div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Hotel</div>
+                                        <div class="info-description">Habblive</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-9 offset-md-3 mt-md-0 col-12 mt-3">
+                                        <div class="border-radial"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <div class="box-event">
+                                <div class="row">
+                                    <div class="col-md-3 col-6">
+                                        <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">21h00</div>
+                                        <div class="info-description">Doação de Raros</div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Presença</div>
+                                        <div class="info-description">1296</div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Hotel</div>
+                                        <div class="info-description">Habblive</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-9 offset-md-3 mt-md-0 col-12 mt-3">
+                                        <div class="border-radial"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <div class="box-event">
+                                <div class="row">
+                                    <div class="col-md-3 col-6">
+                                        <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">21h00</div>
+                                        <div class="info-description">Doação de Raros</div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Presença</div>
+                                        <div class="info-description">1296</div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Hotel</div>
+                                        <div class="info-description">Habblive</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-9 offset-md-3 mt-md-0 col-12 mt-3">
+                                        <div class="border-radial"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <div class="box-event">
+                                <div class="row">
+                                    <div class="col-md-3 col-6">
+                                        <div class="image" style="background-image:url('http://www.scalsys.com/wallpapers/4k-wallpapers-reddit/4k-wallpapers-reddit_92777.jpg');"></div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">21h00</div>
+                                        <div class="info-description">Doação de Raros</div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Presença</div>
+                                        <div class="info-description">1296</div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 pt-md-2 col-6">
+                                        <div class="info-title">Hotel</div>
+                                        <div class="info-description">Habblive</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-9 offset-md-3 mt-md-0 col-12 mt-3">
+                                        <div class="border-radial"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters w-100 mt-5 paginate-content-wrapper">
+                        <div class="col-md-6 col-12 paginate-col-info">
+                            <span class="paginate-text">Mostrando <span>1</span> de <span>8</span> páginas</span>
+                        </div>
+
+                        <div class="col-md-6 mt-md-0 col-12 mt-3 paginate-col-buttons">
+                            <span class="paginate-text opacity">Use</span>
+
+                            <i class="paginate-left inactive icn arrow-left-circle-2 x3"></i>
+                            <i class="paginate-right icn arrow-right-circle-2 x3"></i>
+
+                            <span class="paginate-text opacity">para navegar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'helpers/player-bottom.html.twig' %}
+{% endblock %}

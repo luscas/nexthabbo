@@ -1,0 +1,36 @@
+<audio id="main-stream" preload="none" type="audio/mp3" volume="0" muted controls>
+</audio>
+
+<script type="text/javascript">
+    streamURL = "http://167.114.53.24:9640/;";
+    audio = document.getElementById("main-stream");
+
+    audio.innerHTML = '<source id="main-stream-source" src="' + streamURL + '">';
+
+    function play() {
+        var promise = audio.play();
+        audio.volume = 1;
+        audio.muted = false;
+
+        if (promise !== undefined) {
+            promise.then(_ => {
+                console.log("[PlayerFrame] Play successful");
+
+                localStorage.setItem('radio_play', 'allowed');
+            }).catch(error => {
+                console.log("[PlayerFrame] Play failed", error);
+
+                localStorage.setItem('radio_play', 'not_allowed');
+            });
+        }
+    }
+
+    function pause() {
+        audio.volume = 0;
+        audio.muted = true;
+
+        localStorage.setItem('radio_play', 'paused');
+    }
+
+    play();
+</script>

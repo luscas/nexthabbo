@@ -1,0 +1,329 @@
+{% extends 'master/master.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid container-page-content mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-12 page-sidebar">
+                <div class="title-area">Fórum</div>
+
+                <div class="list-options">
+                    <div class="option">Tópicos novos</div>
+
+                    <div class="option">
+                        Em destaque
+                        <i class="icn arrow-right"></i>
+                    </div>
+
+                    <div class="option">Tópicos fixos</div>
+                    <div class="option">Alertas</div>
+                </div>
+
+                <a href="{{ path_for('mainPage') }}">
+                    <div class="back-main-page">
+                        <i class="icn arrow-left-circle x3"></i>
+                        <div class="text">
+                            Menu principal
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-9 offset-lg-3 mt-lg-0 col-12 mt-3 page-main-content">
+                <div class="row no-gutters">
+                    <div class="col-lg-10 col-6">
+                        <div class="subtitle-area">Em destaque</div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 text-right">
+                        <button class="button button-one cursorPointer">Criar um tópico</button>
+                    </div>
+                </div>
+
+                <div class="row no-gutters page-content-scroll mt-4">
+                    <div class="col-12 mt-3">
+                        <div class="box-topic featured">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-featured x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="box-topic">
+                            <div class="box-topic-blur"></div>
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-lock x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="box-topic">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-topic x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="box-topic">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-topic x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="box-topic">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-topic x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="box-topic">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-topic x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="box-topic">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-topic x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="box-topic">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-topic x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <div class="box-topic">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-topic x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <a href="{{ path_for('forum.viewTopic', { 'id': 1, 'title': "titulo" | slugify }) }}">
+                                        <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    </a>
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'helpers/player-bottom.html.twig' %}
+{% endblock %}

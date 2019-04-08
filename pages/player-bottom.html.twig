@@ -1,0 +1,83 @@
+{% block body %}
+    <section class="player-bottom">
+        <div class="container-fluid container-player-bottom h-100">
+            <div class="row no-gutters align-items-center h-100">
+                <div class="col-lg-4 col-12">
+                    <div class="row">
+                        <div class="col-xl-2 mt-xl-0 col-lg-3 mt-lg-3 col-md-3 mt-md-3 col-2 player-button-col">
+                            <button class="player-button button button-two cursorPointer radio-control" title="Pausar a rádio">
+                                <i class="icn stop x3"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-xl-2 mt-xl-0 col-lg-3 mt-lg-3 col-md-3 mt-md-3 col-2 player-button-col">
+                            <button class="player-button button button-two cursorPointer" title="Fazer pedido">
+                                <i class="icn envelope x3"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-xl-2 mt-xl-0 col-lg-3 mt-lg-3 col-md-3 mt-md-3 col-2 player-button-col">
+                            <button class="player-button button button-two cursorPointer" title="Opções">
+                                <i class="icn options x3"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-xl-2 mt-xl-0 col-lg-3 mt-lg-3 col-md-3 mt-md-3 col-2 player-button-col">
+                            <button class="player-button button button-two cursorPointer" title="Gostei!">
+                                <i class="icn like x3"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-xl-2 mt-xl-0 col-lg-3 mt-lg-3 col-md-3 mt-md-3 col-2 player-button-col">
+                            <button class="player-button button button-two cursorPointer" title="Marcar presença"></button>
+                        </div>
+
+                        <div class="col-xl-2 mt-xl-0 col-lg-3 mt-lg-3 col-md-3 mt-md-3 col-2 player-button-col">
+                            <button class="player-button button button-two cursorPointer" title="Seguir o locutor">
+                                <i class="icn share x3"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-2 col-3">
+                    <div class="habbo-image radio-info-avatar" style="background-image: url('https://habblive.in/imager.php?user=Spice&action=std&size=l&head_direction=2&direction=2&gesture=sml');"></div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6 col-9">
+                    <div class="player-program text-truncate radio-info-program">Carregando...</div>
+                    <div class="player-broadcaster text-truncate radio-info-broadcaster">Carregando...</div>
+                </div>
+
+                <div class="col-xl-2 offset-xl-0 col-lg-3 offset-lg-4 col-4 text-center">
+                    <button class="button button-one button-small player-current-hotel">
+                        <i class="icn circle mr-1"></i>
+                        <span class="radio-info-hotel">Carregando...</span>
+                    </button>
+                </div>
+
+                <div class="col-xl-1 offset-xl-0 col-lg-1 offset-lg-1 col-4 text-right">
+                    <div class="player-listeners">
+                        <i class="icn user x2"></i>
+                        <span class="radio-info-listeners">-</span>
+                    </div>
+                </div>
+
+                <div class="col-xl-1 offset-xl-0 col-lg-1 col-4 text-right">
+                    <div class="dropleft">
+                        <div class="player-volume" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icn volume x2"></i>
+                        </div>
+
+                        <div class="dropdown-menu player-volume-dropdown">
+                            <div class="slider-border">
+                                <div id="player-volume-slider" class="slider player-volume-slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

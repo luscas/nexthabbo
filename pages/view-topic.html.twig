@@ -1,0 +1,367 @@
+{% extends 'master/master.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid container-page-content mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-12 page-sidebar">
+                <div class="title-area">Tópico</div>
+
+                <div class="list-options">
+                    <div class="option view-topic-go-topic">Tópico original</div>
+                    <div class="option view-topic-go-reply">Respostas (40)</div>
+                    <div class="option">Interações</div>
+                    <div class="option yellow">Moderação</div>
+                </div>
+
+                <a href="{{ path_for('mainPage.forum') }}">
+                    <div class="back-main-page">
+                        <i class="icn arrow-left-circle x3"></i>
+                        <div class="text">
+                            Voltar ao Fórum
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-9 offset-lg-3 mt-lg-0 col-12 mt-3 page-main-content">
+                <div class="row no-gutters">
+                    <div class="col-lg-8 col-6">
+                        <div class="subtitle-area">Título do tópico</div>
+                    </div>
+
+                    <div class="col-lg-4 col-6 text-right">
+                        <button class="button button-one cursorPointer">Enviar resposta</button>
+                        <button class="button button-one cursorPointer mt-lg-0 mt-3">Criar um tópico</button>
+                    </div>
+                </div>
+
+                <div class="row no-gutters page-content-scroll mt-4">
+                    <div class="col-12 mt-3">
+                        <div class="box-topic active">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-1 col-lg-2 mt-lg-0 col-sm-2 mt-sm-3 col-3 mt-3 text-center">
+                                    <div class="icn forum-topic x6"></div>
+                                </div>
+
+                                <div class="col-xl-5 col-lg-4 mt-lg-0 col-sm-10 mt-sm-3 col-9 mt-3">
+                                    <div class="title text-truncate">Fore dolor labore labore anim sint cillum quem sint esse magna illum ipsum veniam aute tamen culpa malis multos quis</div>
+                                    <div class="author">Criado por Henrique, há 2 semanas</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn eye x4"></i>
+                                    <div class="stats-number">500</div>
+                                </div>
+
+                                <div class="col-lg-2 col-sm-3 col-6 text-center">
+                                    <i class="icn forum-topic-posts x4"></i>
+                                    <div class="stats-number">30</div>
+                                </div>
+
+                                <div class="col-lg-1 col-sm-4 mb-sm-3 offset-sm-0 col-3 offset-5 mb-3">
+                                    <div class="user-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4 topic-entry">
+                        <div class="box-topic-entry">
+                            <div class="row">
+                                <div class="col-md-4 col-12 text-center author-infos">
+                                    <div class="author-username">JanjaO.BAN</div>
+                                    <div class="habbo-image" style="background-image: url('https://habblive.in/imager.php?user=Spice&action=std&size=l&head_direction=2&direction=2&gesture=sml');"></div>
+                                    <div class="ranking pink">Celebridade</div>
+                                </div>
+
+                                <div class="col-md-8 mt-md-0 col-12 mt-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-8 col-12">
+                                            <div class="author-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+
+                                            <div class="author-published">
+                                                JanjaO.BAN publicou no fórum:
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-12 text-right">
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 topic-content">O quorum se tempor. Culpa officia te probant si irure in incurreret ad nisi, o
+                                            quorum sint quid expetendis ab incurreret velit doctrina doctrina. Illum
+                                            tractavissent voluptate minim possumus, elit exquisitaque possumus sunt
+                                            litteris, litteris eram elit ne aute ita eram qui ut summis litteris est ex sunt
+                                            laboris qui nam quae expetendis coniunctione hic labore praetermissum appellat
+                                            culpa nostrud an de probant et expetendis.Cernantur o probant te velit quibusdam
+                                            id proident ubi te amet legam enim nescius, noster probant ingeniis, non
+                                            mandaremus ne commodo, ingeniis non mentitum, tamen vidisse sed elit multos hic
+                                            non amet quis e deserunt. Sed si transferrem. Tempor o nescius. Multos
+                                            familiaritatem cernantur sunt fabulas.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4 topic-first-reply">
+                        <div class="box-topic-entry reply">
+                            <div class="row">
+                                <div class="col-md-4 col-12 text-center author-infos">
+                                    <div class="author-username">JanjaO.BAN</div>
+                                    <div class="habbo-image" style="background-image: url('https://habblive.in/imager.php?user=Spice&action=std&size=l&head_direction=2&direction=2&gesture=sml');"></div>
+                                    <div class="ranking pink">Celebridade</div>
+                                </div>
+
+                                <div class="col-md-8 mt-md-0 col-12 mt-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-8 col-12">
+                                            <div class="author-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+
+                                            <div class="author-published">
+                                                JanjaO.BAN respondeu ao tópico:
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-12 text-right">
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 topic-content">O quorum se tempor. Culpa officia te probant si irure in incurreret ad nisi, o
+                                            quorum sint quid expetendis ab incurreret velit doctrina doctrina. Illum
+                                            tractavissent voluptate minim possumus, elit exquisitaque possumus sunt
+                                            litteris, litteris eram elit ne aute ita eram qui ut summis litteris est ex sunt
+                                            laboris qui nam quae expetendis coniunctione hic labore praetermissum appellat
+                                            culpa nostrud an de probant et expetendis.Cernantur o probant te velit quibusdam
+                                            id proident ubi te amet legam enim nescius, noster probant ingeniis, non
+                                            mandaremus ne commodo, ingeniis non mentitum, tamen vidisse sed elit multos hic
+                                            non amet quis e deserunt. Sed si transferrem. Tempor o nescius. Multos
+                                            familiaritatem cernantur sunt fabulas.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <div class="box-topic-entry reply">
+                            <div class="row">
+                                <div class="col-md-4 col-12 text-center author-infos">
+                                    <div class="author-username">JanjaO.BAN</div>
+                                    <div class="habbo-image" style="background-image: url('https://habblive.in/imager.php?user=Spice&action=std&size=l&head_direction=2&direction=2&gesture=sml');"></div>
+                                    <div class="ranking pink">Celebridade</div>
+                                </div>
+
+                                <div class="col-md-8 mt-md-0 col-12 mt-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-8 col-12">
+                                            <div class="author-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+
+                                            <div class="author-published">
+                                                JanjaO.BAN respondeu ao tópico:
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-12 text-right">
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 topic-content">O quorum se tempor. Culpa officia te probant si irure in incurreret ad nisi, o
+                                            quorum sint quid expetendis ab incurreret velit doctrina doctrina. Illum
+                                            tractavissent voluptate minim possumus, elit exquisitaque possumus sunt
+                                            litteris, litteris eram elit ne aute ita eram qui ut summis litteris est ex sunt
+                                            laboris qui nam quae expetendis coniunctione hic labore praetermissum appellat
+                                            culpa nostrud an de probant et expetendis.Cernantur o probant te velit quibusdam
+                                            id proident ubi te amet legam enim nescius, noster probant ingeniis, non
+                                            mandaremus ne commodo, ingeniis non mentitum, tamen vidisse sed elit multos hic
+                                            non amet quis e deserunt. Sed si transferrem. Tempor o nescius. Multos
+                                            familiaritatem cernantur sunt fabulas.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <div class="box-topic-entry reply">
+                            <div class="row">
+                                <div class="col-md-4 col-12 text-center author-infos">
+                                    <div class="author-username">JanjaO.BAN</div>
+                                    <div class="habbo-image" style="background-image: url('https://habblive.in/imager.php?user=Spice&action=std&size=l&head_direction=2&direction=2&gesture=sml');"></div>
+                                    <div class="ranking pink">Celebridade</div>
+                                </div>
+
+                                <div class="col-md-8 mt-md-0 col-12 mt-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-8 col-12">
+                                            <div class="author-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+
+                                            <div class="author-published">
+                                                JanjaO.BAN respondeu ao tópico:
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-12 text-right">
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 topic-content">O quorum se tempor. Culpa officia te probant si irure in incurreret ad nisi, o
+                                            quorum sint quid expetendis ab incurreret velit doctrina doctrina. Illum
+                                            tractavissent voluptate minim possumus, elit exquisitaque possumus sunt
+                                            litteris, litteris eram elit ne aute ita eram qui ut summis litteris est ex sunt
+                                            laboris qui nam quae expetendis coniunctione hic labore praetermissum appellat
+                                            culpa nostrud an de probant et expetendis.Cernantur o probant te velit quibusdam
+                                            id proident ubi te amet legam enim nescius, noster probant ingeniis, non
+                                            mandaremus ne commodo, ingeniis non mentitum, tamen vidisse sed elit multos hic
+                                            non amet quis e deserunt. Sed si transferrem. Tempor o nescius. Multos
+                                            familiaritatem cernantur sunt fabulas.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <div class="box-topic-entry reply">
+                            <div class="row">
+                                <div class="col-md-4 col-12 text-center author-infos">
+                                    <div class="author-username">JanjaO.BAN</div>
+                                    <div class="habbo-image" style="background-image: url('https://habblive.in/imager.php?user=Spice&action=std&size=l&head_direction=2&direction=2&gesture=sml');"></div>
+                                    <div class="ranking pink">Celebridade</div>
+                                </div>
+
+                                <div class="col-md-8 mt-md-0 col-12 mt-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-8 col-12">
+                                            <div class="author-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/1079491990947909633/mgU3HDju_400x400.jpg');"></div>
+
+                                            <div class="author-published">
+                                                JanjaO.BAN respondeu ao tópico:
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-12 text-right">
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+
+                                            <button class="button button-one button-small cursorPointer">
+                                                <i class="icn circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 topic-content">O quorum se tempor. Culpa officia te probant si irure in incurreret ad nisi, o
+                                            quorum sint quid expetendis ab incurreret velit doctrina doctrina. Illum
+                                            tractavissent voluptate minim possumus, elit exquisitaque possumus sunt
+                                            litteris, litteris eram elit ne aute ita eram qui ut summis litteris est ex sunt
+                                            laboris qui nam quae expetendis coniunctione hic labore praetermissum appellat
+                                            culpa nostrud an de probant et expetendis.Cernantur o probant te velit quibusdam
+                                            id proident ubi te amet legam enim nescius, noster probant ingeniis, non
+                                            mandaremus ne commodo, ingeniis non mentitum, tamen vidisse sed elit multos hic
+                                            non amet quis e deserunt. Sed si transferrem. Tempor o nescius. Multos
+                                            familiaritatem cernantur sunt fabulas.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'helpers/player-bottom.html.twig' %}
+{% endblock %}

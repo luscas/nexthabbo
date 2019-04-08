@@ -1,0 +1,220 @@
+{% extends 'master/master.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid container-welcome-player">
+        <div class="row">
+            <div class="col-xl-4 col-12">
+                <div class="welcome-area">
+                    <h1>Bem-vindo!</h1>
+                    <h2>Fique por dentro de tudo o que acontece nos hotéis!</h2>
+                </div>
+
+                <div class="user-area mt-5">
+                    <button class="button button-one cursorPointer">Fazer login</button>
+
+                    <a href="{{ path_for('user.createAccount') }}">
+                        <button class="button button-one cursorPointer ml-2">Crie sua conta</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xl-8 col-12">
+                <div class="row align-items-center player-area">
+                    <div class="col-xl-4 col-md-4 col-12">
+                        <div class="habbo-image-wrapper">
+                            <div class="habbo-image" style="background-image: url('https://habblive.in/imager.php?user=Spice&action=std&size=l&head_direction=2&direction=2&gesture=sml');"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8 mt-xl-0 col-md-8 col-12 mt-5">
+                        <div class="row">
+                            <div class="col-md-auto col-12">
+                                <div class="player-title">Rádio</div>
+                            </div>
+
+                            <div class="col-md-auto mt-md-0 col-sm-5 col-12 mt-2">
+                                <button class="button button-one button-small player-current-hotel">
+                                    <i class="icn circle mr-1"></i>
+                                    Hotel Habblive
+                                </button>
+                            </div>
+
+                            <div class="col-md-auto mt-md-0 ml-md-auto col-sm-5 col-9 mt-2">
+                                <div class="player-listeners">
+                                    <i class="icn user x2"></i>
+                                    1500
+                                </div>
+                            </div>
+
+                            <div class="col-md-auto mt-md-0 col-sm-2 col-3 mt-2">
+                                <div class="dropleft">
+                                    <div class="player-volume" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="icn volume x2"></i>
+                                    </div>
+
+                                    <div class="dropdown-menu player-volume-dropdown">
+                                        <div class="slider-border">
+                                            <div id="player-volume-slider" class="slider player-volume-slider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-1">
+                            <div class="col-12">
+                                <div class="player-program text-truncate">illum labore quid fugiat dolore noster velit anim dolore elit</div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="player-infos">
+                                    com
+                                    <span class="radio-broadcaster">:FX,</span>
+                                    em
+                                    <span class="radio-hotel">Hotel Habblive</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-xl-2 col-lg-2 mt-lg-0 col-md-2 mt-md-3 col-sm-2 mt-sm-3 col-4 mt-3 player-button-col">
+                                <button class="player-button button button-two cursorPointer" title="Pausar a rádio">
+                                    <i class="icn stop x4"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-2 mt-lg-0 col-md-2 mt-md-3 col-sm-2 mt-sm-3 col-4 mt-3 player-button-col">
+                                <button class="player-button button button-two cursorPointer" title="Fazer pedido">
+                                    <i class="icn envelope x4"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-2 mt-lg-0 col-md-2 mt-md-3 col-sm-2 mt-sm-3 col-4 mt-3 player-button-col">
+                                <button class="player-button button button-two cursorPointer" title="Opções">
+                                    <i class="icn options x4"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-2 mt-lg-0 col-md-2 mt-md-3 col-sm-2 mt-sm-3 col-4 mt-3 player-button-col">
+                                <button class="player-button button button-two cursorPointer" title="Gostei!">
+                                    <i class="icn like x4"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-2 mt-lg-0 col-md-2 mt-md-3 col-sm-2 mt-sm-3 col-4 mt-3 player-button-col">
+                                <button class="player-button button button-two cursorPointer" title="Marcar presença"></button>
+                            </div>
+
+                            <div class="col-xl-2 col-lg-2 mt-lg-0 col-md-2 mt-md-3 col-sm-2 mt-sm-3 col-4 mt-3 player-button-col">
+                                <button class="player-button button button-two cursorPointer" title="Seguir o locutor">
+                                    <i class="icn share x4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid container-navigation-wrapper">
+        <div class="container-fluid container-navigation">
+            <div class="row justify-content-between mt-5">
+                <div class="col-auto">
+                    <div class="navigation-title">Navegação</div>
+                </div>
+
+                <div class="col-auto">
+                    <div class="navigation-helper">Clique/toque e arraste</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid container-navigation-menu">
+            <div class="row mt-1 mb-3 navigation-menu">
+                <div class="col-md-3">
+                    <a href="{{ path_for('mainPage.forum') }}">
+                        <div class="navigation-box">
+                            <div class="icon">
+                                <i class="icn forum x7"></i>
+                            </div>
+
+                            <div class="name">Fórum de discussões</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="{{ path_for('mainPage.hotels') }}">
+                        <div class="navigation-box">
+                            <div class="icon">
+                                <i class="icn heart x7"></i>
+                            </div>
+
+                            <div class="name">Hotéis populares</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="{{ path_for('mainPage.articles') }}">
+                        <div class="navigation-box active">
+                            <div class="icon">
+                                <i class="icn glasses x7"></i>
+                                <div class="notification">10</div>
+                            </div>
+
+                            <div class="name">Portal de notícias</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="{{ path_for('mainPage.gallery') }}">
+                        <div class="navigation-box">
+                            <div class="icon">
+                                <i class="icn circle x7"></i>
+                            </div>
+
+                            <div class="name">Galeria</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="{{ path_for('mainPage.events') }}">
+                        <div class="navigation-box">
+                            <div class="icon">
+                                <i class="icn schedule x7"></i>
+                            </div>
+
+                            <div class="name">Calendário e cronograma</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="{{ path_for('mainPage.market') }}">
+                        <div class="navigation-box">
+                            <div class="icon">
+                                <i class="icn shopping-bag x7"></i>
+                            </div>
+
+                            <div class="name">Valores</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="navigation-box">
+                        <div class="icon">
+                            <i class="icn forum x7"></i>
+                        </div>
+
+                        <div class="name">Minhas conquistas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

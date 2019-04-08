@@ -1,0 +1,70 @@
+{% extends 'master/master.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid container-page-content mt-5">
+        <div class="row">
+            <div class="col-lg-5 col-12 h-100 page-sidebar">
+                <div class="title-area">Crie sua conta</div>
+
+                <div class="description-area">Cadastre-se e tenha acesso completo ao conteúdo do site</div>
+
+                <a href="{{ path_for('mainPage') }}">
+                    <div class="back-main-page">
+                        <i class="icn arrow-left-circle x3"></i>
+                        <div class="text">
+                            Menu principal
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-6 offset-lg-5 mt-lg-0 col-12 mt-3 page-main-content">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <div class="subtitle-area">Minhas informações</div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters page-content-scroll mt-4">
+                    <div class="col-12">
+                        <form action="#">
+                            <div class="form-group-one">
+                                <label for="user-register-name" class="label-one">Nome</label>
+                                <input type="text" class="input-one" id="user-register-name" placeholder="O seu nome real">
+                            </div>
+
+                            <div class="form-group-one mt-3">
+                                <label for="user-register-username" class="label-one">Usuário</label>
+                                <input type="text" class="input-one" id="user-register-username" placeholder="O seu usuário ou login">
+                            </div>
+
+                            <div class="form-group-one mt-3">
+                                <label for="user-register-email" class="label-one">E-mail</label>
+                                <input type="email" class="input-one" id="user-register-email" placeholder="Endereço de e-mail válido">
+                            </div>
+
+                            <div class="form-group-one mt-3">
+                                <label for="user-register-password" class="label-one">Senha</label>
+                                <input type="password" class="input-one" id="user-register-ppassword" placeholder="Senha com no mínimo 8 digitos">
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-8">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="user-register-remember-me">
+                                        <label class="custom-control-label" for="user-register-remember-me">Manter logado na conta</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-4 text-right">
+                                    <button class="button button-one" type="submit">Cadastrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'helpers/player-bottom.html.twig' %}
+{% endblock %}
